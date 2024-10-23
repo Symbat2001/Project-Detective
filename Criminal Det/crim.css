@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+body{
+    height: 2000px;
+}
+
+/* басы */
+header{
+    background-image: url(Criminal.jpg.webp);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+}
+
+
+
+/* нав батрымалары мен логотипы */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(179, 178, 178, 0.221);
+}
+
+/* навигациялык батырмалары */
+.batyrma{
+    display: flex;
+    column-gap: 250px;
+}
+
+.batyrmalar{
+    text-decoration: none;
+    font-weight: 600px;
+    color: gold;
+}
+
+.batyrmalar:hover{
+    color: #fff;
+   
+}
+
+
+/* Суреттин устине жазылган болим */
+.basty{
+    margin-left: 200px;
+    margin-top: 200px;
+    position: relative;
+}
+
+
+
+.basty-bet{
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: gold;
+    color: #fff;
+    position: absolute;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+
+.basty-bet:hover{
+    background-color: black;
+    transform: scale(1.2);
+}
+
+
+
+/* aside косымша болиги */
+h2{
+    text-align: center;
+    padding: 70px;
+    color: black;
+}
+
+
+.ortaq{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid gold;
+    margin: 30px;
+    background-color: gold;
+    border-radius: 20px;
+}
+
+.opisaniya{
+    padding: 50px;
+    margin-right: 50px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
+
+.suret{
+    margin-right: 30px;
+}
+
+.suret img{
+    width: 100%;
+    margin-right: 30px;
+}
+
+/* sectiom 1 мазмуны */
+.barlyq{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.bolimder{
+    background-color: gold;
+    width: 350px;
+    padding: 20px;
+    text-align: center;
+    border: 2px solid gold;
+    border-radius: 30px;
+    color: #fff;
+}
+
+/* экранннын он жак астынгы болигиндеги сары батырма */
+.help-me{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: gold;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.help-me h2{
+    margin-bottom: 10px;
+}
+
+.help-me p{
+    font-size: 14px;
+    color: black;
+}
+
+.help-me a{
+    color: black;
+
+}
+
+/* логотипке анимация */
+.criminal{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    animation: Criminal 3s infinite, Crimlogo 5s infinite linear;
+}
+
+@keyframes Criminal {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes Crimlogo {
+    from {
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+/* Корытынды болими */
+
+iframe{
+    height: 200px;
+    width: 300px;
+    border-radius: 50%;
+    
+}
+
+.cart{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
+
+.cart1{
+    width: 45%;
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 40px;
+}
+
+.cart2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart1 h3{
+    margin-top: 15px;
+    color: gold;
+}
+
+
+.quqyq{
+    color: gold;
+    font-size: 20px;
+}
+
+footer{
+    text-align: center;
+    background-color: rgba(43, 42, 42, 0.845);
+    padding: 20px;
+
+}
